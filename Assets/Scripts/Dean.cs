@@ -11,7 +11,7 @@ public class Dean : MonoBehaviour
 
     [SerializeField] private Transform groundCheck;
 
-    [SerializeField] private float groundCheckRadius = 0.05f;
+    [SerializeField] private float groundCheckRadius = 0.2f;
 
     [SerializeField] private float speed = 2f;
 
@@ -30,7 +30,7 @@ public class Dean : MonoBehaviour
     void Update()
     {
         var inputX = Input.GetAxisRaw("Horizontal");
-        var jumpInput = Input.GetButton("Jump"); 
+        var jumpInput = Input.GetButtonDown("Jump"); 
 
         rigidBody.velocity = new Vector2(inputX * speed, rigidBody.velocity.y);
 
@@ -43,8 +43,8 @@ public class Dean : MonoBehaviour
         {
             transform.localScale = new Vector3(Mathf.Sign(inputX), 1, 1);
         }
-
-        animator.SetBool("IsJump", IsGrounded());
+      
+        animator.SetBool("IsJump", rigidBody.velocity.y > 0f);
         animator.SetBool("IsRun", inputX != 0); 
     }
 
