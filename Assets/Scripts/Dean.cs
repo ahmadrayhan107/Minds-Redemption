@@ -11,11 +11,11 @@ public class Dean : MonoBehaviour
 
     [SerializeField] private Transform groundCheck;
 
-    [SerializeField] private float groundCheckRadius = 0.2f;
+    [SerializeField] private float groundCheckRadius;
 
-    [SerializeField] private float speed = 2f;
+    [SerializeField] private float speed;
 
-    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private float jumpForce;
 
     [SerializeField] private LayerMask collisionMask;
 
