@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Nyawa : MonoBehaviour
 {
     public NyawaUi nyawaUI;
+     public GameOver gameOver;
     private int nyawa;
 
     private void Start()
@@ -22,7 +24,7 @@ public class Nyawa : MonoBehaviour
         if (nyawa <= 0)
         {
             Debug.Log("Game Over");
-            // Tambahkan logika game over di sini
+            SceneManager.LoadScene("GameOver");
         }
     }
 }

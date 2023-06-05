@@ -414,6 +414,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nyawaUI: {fileID: 241276102}
+  gameOver: {fileID: 0}
 --- !u!4 &303661507
 Transform:
   m_ObjectHideFlags: 0
