@@ -11,12 +11,16 @@ public class KarakterBewarna : MonoBehaviour
     public float speed = 2;
     private bool hasJumped = false;
     private bool isGrounded = false;
+    private Vector2 initialPosition;
+    private Nyawa nyawa;
 
     private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
+        initialPosition = transform.position;
         rb = GetComponent<Rigidbody2D>();
+        nyawa = FindObjectOfType<Nyawa>();
         animator = GetComponent<Animator>();
 
         moveLeft = false;
@@ -48,7 +52,7 @@ public class KarakterBewarna : MonoBehaviour
         if (!hasJumped && isGrounded)
         {
             Quaternion rotation = transform.rotation;
-            float jumpHeight = -3f;
+            float jumpHeight = -7f;
             float jumpHorizontalSpeed = 5f;
 
             float jumpDirection = (rotation.eulerAngles.y == 0f) ? 1f : -1f;
@@ -116,5 +120,20 @@ public class KarakterBewarna : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontalMove, rb.velocity.y);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("lubang"))
+        {
+            RespawnCharacter();
+            nyawa.KurangiNyawa(1);
+        }
+    }
+
+    private void RespawnCharacter()
+    {
+        transform.position = initialPosition;
+
     }
 }
