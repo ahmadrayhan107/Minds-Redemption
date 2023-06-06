@@ -4016,7 +4016,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1851430499}
   m_LocalRotation: {x: -0, y: -0, z: 0.20037304, w: 0.9797197}
-  m_LocalPosition: {x: 7.262, y: -0.701, z: 0}
+  m_LocalPosition: {x: 7.627, y: -0.676, z: 0}
   m_LocalScale: {x: -0.109939665, y: -0.068173245, z: -0.09477065}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4233,7 +4233,6 @@ GameObject:
   - component: {fileID: 2080305312}
   - component: {fileID: 2080305311}
   - component: {fileID: 2080305310}
-  - component: {fileID: 2080305309}
   - component: {fileID: 2080305308}
   m_Layer: 0
   m_Name: 'box lompat '
@@ -4249,34 +4248,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2080305307}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4015270ef4ba53b4baa808500d51a2b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stick: {fileID: 0}
+  stick: {fileID: 1851430499}
   stickMovementAmount: 0.5
---- !u!50 &2080305309
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2080305307}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 40
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &2080305310
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4287,8 +4265,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
+  m_IsTrigger: 1
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 0.97869396, y: -5.2653275}
   m_SpriteTilingProperty:
@@ -4427,7 +4405,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 40
+  m_Mass: 150
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: -1
