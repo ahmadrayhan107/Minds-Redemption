@@ -1,13 +1,12 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SaklarBayangan : MonoBehaviour
+public class SaklarBerwarna : MonoBehaviour
 {
     public Transform player;
     public float interactionDistance = 2f; // Jarak maksimum antara karakter dan objek saklar
 
     public GameObject objectToDisappear; // Objek yang akan menghilang
-    public GameObject objectToDisappear2; // Objek yang akan menghilang
 
     
     private bool isInteracting = false;
@@ -25,7 +24,6 @@ public class SaklarBayangan : MonoBehaviour
         {
             isInteracting = true;
             objectToDisappear.SetActive(false);
-            objectToDisappear2.SetActive(false);
         }
     }
 

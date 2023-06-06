@@ -51,7 +51,7 @@ public class KarakterBayangan : MonoBehaviour
         if (!hasJumped && isGrounded)
         {
             Quaternion rotation = transform.rotation;
-            float jumpHeight = 7f;
+            float jumpHeight = 3.5f;
             float jumpHorizontalSpeed = 5f;
 
             float jumpDirection = (rotation.eulerAngles.y == 0f) ? 1f : -1f;
@@ -73,7 +73,7 @@ public class KarakterBayangan : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Constraint"))
+        if (collision.gameObject.CompareTag("pembatas"))
         {
             hasJumped = false;
             isGrounded = true;
@@ -82,7 +82,7 @@ public class KarakterBayangan : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Constraint"))
+        if (collision.gameObject.CompareTag("pembatas"))
         {
             isGrounded = false;
         }
@@ -94,8 +94,8 @@ public class KarakterBayangan : MonoBehaviour
     void Update()
     {
         MovePlayer();
-        animator.SetBool("IsRun", moveLeft || moveRight);
-        animator.SetBool("IsJump", hasJumped);
+       animator.SetBool("IsRun", moveLeft || moveRight);
+       animator.SetBool("IsJump", hasJumped);
     }
 
     private void MovePlayer()
