@@ -3826,16 +3826,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1845543934}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c0b3c3f67dd26e4a934216b829c3747, type: 3}
+  m_Script: {fileID: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 0}
-  moveLeft: 0
-  moveRight: 0
-  horizontalMove: 0
-  speed: 2
-  hasJumped: 0
-  isGrounded: 0
 --- !u!1 &1851430499
 GameObject:
   m_ObjectHideFlags: 0
