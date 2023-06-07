@@ -13,15 +13,15 @@ public class KarakterBewarna : MonoBehaviour
     private bool isGrounded = false;
     private Vector2 initialPosition;
     private Nyawa nyawa;
-
-   // private Animator animator;
+    private Animator animator;
+    
     // Start is called before the first frame update
     void Start()
     {
         initialPosition = transform.position;
         rb = GetComponent<Rigidbody2D>();
         nyawa = FindObjectOfType<Nyawa>();
-      //  animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
 
         moveLeft = false;
         moveRight = false;
@@ -95,8 +95,8 @@ public class KarakterBewarna : MonoBehaviour
     void Update()
     {
         MovePlayer();
-       // animator.SetBool("IsRun", moveLeft || moveRight);
-       // animator.SetBool("IsJump", hasJumped);
+        animator.SetBool("IsRun", moveLeft || moveRight);
+        animator.SetBool("IsJump", hasJumped);
     }
 
     private void MovePlayer()
