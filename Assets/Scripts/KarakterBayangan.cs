@@ -79,7 +79,7 @@ public class KarakterBayangan : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Box"))
+        if (collision.gameObject.CompareTag("Constraint"))
         {
             hasJumped = false;
             isGrounded = true;
@@ -88,7 +88,7 @@ public class KarakterBayangan : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Box"))
+        if (collision.gameObject.CompareTag("Constraint"))
         {
             isGrounded = false;
         }
