@@ -14,6 +14,8 @@ public class KarakterBayangan : MonoBehaviour
     private Vector2 initialPosition;
     private Nyawa nyawa;
     private Animator animator;
+
+     private AnchorGameObject gameObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,11 +26,13 @@ public class KarakterBayangan : MonoBehaviour
 
         moveLeft = false;
         moveRight = false;
+        gameObject = GetComponent<AnchorGameObject>();
     }
 
     public void PointerDownLeft()
     {
         moveLeft = true;
+        gameObject.executeInUpdate = false;
     }
 
     public void PointerUpLeft()
@@ -39,6 +43,7 @@ public class KarakterBayangan : MonoBehaviour
     public void PointerDownRight()
     {
         moveRight = true;
+        gameObject.executeInUpdate = false;
     }
 
     public void PointerUpRight()
@@ -51,7 +56,7 @@ public class KarakterBayangan : MonoBehaviour
         if (!hasJumped && isGrounded)
         {
             Quaternion rotation = transform.rotation;
-            float jumpHeight = 7f;
+            float jumpHeight = 3f;
             float jumpHorizontalSpeed = 5f;
 
             float jumpDirection = (rotation.eulerAngles.y == 0f) ? 1f : -1f;
@@ -63,6 +68,7 @@ public class KarakterBayangan : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
 
             hasJumped = true;
+            gameObject.executeInUpdate = false;
         }
     }
 
@@ -73,7 +79,7 @@ public class KarakterBayangan : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Constraint"))
+        if (collision.gameObject.CompareTag("Box"))
         {
             hasJumped = false;
             isGrounded = true;
@@ -82,7 +88,7 @@ public class KarakterBayangan : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Constraint"))
+        if (collision.gameObject.CompareTag("Box"))
         {
             isGrounded = false;
         }

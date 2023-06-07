@@ -10,6 +10,7 @@ public class BoxBayangan : MonoBehaviour
     private bool isPlayerNearby = false;
     private bool isInteracting = false;
     private Vector2 initialBoxPosition;
+    private AnchorGameObject gameObject;
 
     public void Update()
     {
@@ -19,9 +20,11 @@ public class BoxBayangan : MonoBehaviour
 
     public void StartInteraction()
     {
+        gameObject = GetComponent<AnchorGameObject>();
         if (isPlayerNearby && !isInteracting)
         {
             isInteracting = true;
+            gameObject.executeInUpdate = false;
             initialBoxPosition = transform.position;
         }
     }

@@ -15,6 +15,8 @@ public class KarakterBewarna : MonoBehaviour
     private Nyawa nyawa;
 
     private Animator animator;
+
+    private AnchorGameObject gameObject;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +24,7 @@ public class KarakterBewarna : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         nyawa = FindObjectOfType<Nyawa>();
         animator = GetComponent<Animator>();
+        gameObject = GetComponent<AnchorGameObject>();
 
         moveLeft = false;
         moveRight = false;
@@ -30,6 +33,7 @@ public class KarakterBewarna : MonoBehaviour
     public void PointerDownLeft()
     {
         moveLeft = true;
+        gameObject.executeInUpdate = false;
     }
 
     public void PointerUpLeft()
@@ -40,6 +44,7 @@ public class KarakterBewarna : MonoBehaviour
     public void PointerDownRight()
     {
         moveRight = true;
+        gameObject.executeInUpdate = false;
     }
 
     public void PointerUpRight()
@@ -52,7 +57,7 @@ public class KarakterBewarna : MonoBehaviour
         if (!hasJumped && isGrounded)
         {
             Quaternion rotation = transform.rotation;
-            float jumpHeight = -7f;
+            float jumpHeight = -3f;
             float jumpHorizontalSpeed = 5f;
 
             float jumpDirection = (rotation.eulerAngles.y == 0f) ? 1f : -1f;
@@ -64,6 +69,7 @@ public class KarakterBewarna : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
 
             hasJumped = true;
+            gameObject.executeInUpdate = false;
         }
     }
 
