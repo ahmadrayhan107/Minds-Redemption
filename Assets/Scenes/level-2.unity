@@ -262,7 +262,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 95777191}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: SaklarBayangan, Assembly-CSharp
           m_MethodName: StartInteraction
           m_Mode: 1
@@ -278,7 +278,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 95777191}
+        - m_Target: {fileID: 0}
           m_TargetAssemblyTypeName: SaklarBayangan, Assembly-CSharp
           m_MethodName: StopInteraction
           m_Mode: 1
@@ -411,15 +411,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 95777185}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ead4055609fd1ee40ad00f08f097aeb8, type: 3}
+  m_Script: {fileID: 11500000, guid: e584490cfdefa134998ccfdac1c15bd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1845543938}
   interactionDistance: 2
   objectToDisappear: {fileID: 577978113}
   objectToDisappear2: {fileID: 457927912}
-  player: {fileID: 1845543938}
-  isPlayerNearby: 0
-  isInteracting: 0
 --- !u!1 &243599418
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,14 +665,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 316888219}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4c0a06893686dcb4b8f24504d870867b, type: 3}
+  m_Script: {fileID: 11500000, guid: 3497227c9d6d60448a4b88dbb47c6d1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1529563226}
   interactionDistance: 2
   objectToDisappear: {fileID: 431572694}
-  player: {fileID: 1529563226}
-  isPlayerNearby: 0
-  isInteracting: 0
 --- !u!61 &316888224
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1349,15 +1345,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 674495400}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75dbf9cbe865aa742bca05bb5e145e66, type: 3}
+  m_Script: {fileID: 11500000, guid: 48c74c7c2f939d64fbddbe34981deb15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1845543938}
   interactionDistance: 2
-  boxMoveDistance: 4
-  isPlayerNearby: 0
-  isInteracting: 0
-  initialBoxPosition: {x: 0, y: 0}
+  boxMoveDistance: 10
 --- !u!1 &700593195
 GameObject:
   m_ObjectHideFlags: 0
@@ -2508,7 +2501,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -673192085
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 02d191fc538493744993949f55652ecc, type: 3}
@@ -3224,15 +3217,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1648674454}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f2fb39d46bf2704b90eef854e3f0d15, type: 3}
+  m_Script: {fileID: 11500000, guid: c809c0f0fb0643a498ac85890c21309e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1529563226}
   interactionDistance: 2
-  boxMoveDistance: 20
-  isPlayerNearby: 0
-  isInteracting: 0
-  initialBoxPosition: {x: 0, y: 0}
+  boxMoveDistance: 10
 --- !u!1 &1662586362
 GameObject:
   m_ObjectHideFlags: 0
@@ -3372,9 +3362,9 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 11500000, guid: 8842e6545460fc2469f4b30631b73479, type: 3}
+        - m_Target: {fileID: 316888223}
           m_TargetAssemblyTypeName: SaklarBerwarna, Assembly-CSharp
-          m_MethodName: 
+          m_MethodName: StartInteraction
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3827,9 +3817,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1845543934}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 9b8ccbdbefbcdd9428e02232cc7dfaa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1 &1851430499
 GameObject:
   m_ObjectHideFlags: 0
