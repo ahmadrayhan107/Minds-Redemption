@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 63c9bd31acdd8114ab8f81ce3a5bce5e
+guid: 382762da0b11b6f40b219ba11cbba833
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -115,91 +115,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: mental_bar_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1248
-        width: 1673
-        height: 410
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be4165157481d94459c684a55efde73b
-      internalID: -1816851812
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mental_bar_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 833
-        width: 1673
-        height: 409
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c053db0a8070fa04b81649169cae250b
-      internalID: 969541002
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mental_bar_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 416
-        width: 1673
-        height: 409
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 927fbcb0421797c49bcddd4212f7b351
-      internalID: -728635435
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: mental_bar_9
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1673
-        height: 409
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9a6cbe989bca4e14b8b613bf6f39d793
-      internalID: -871638595
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -210,17 +126,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      mental_bar_0: -875182030
-      mental_bar_1: -1816851812
-      mental_bar_2: 578136067
-      mental_bar_3: 969541002
-      mental_bar_4: 695700372
-      mental_bar_5: 1041459563
-      mental_bar_6: -728635435
-      mental_bar_7: -635559080
-      mental_bar_8: -1819308844
-      mental_bar_9: -871638595
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
