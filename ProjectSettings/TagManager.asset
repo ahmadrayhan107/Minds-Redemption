@@ -8,6 +8,7 @@ TagManager:
   - lubang
   - pembatas
   - Box
+  - Player1
   layers:
   - Default
   - TransparentFX

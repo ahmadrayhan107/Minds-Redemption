@@ -10,7 +10,7 @@ public class BoxBewarna : MonoBehaviour
     private bool isPlayerNearby = false;
     private bool isInteracting = false;
     private Vector2 initialBoxPosition;
-    private AnchorGameObject gameObject;
+    [SerializeField] private AnchorGameObject anchor;
 
     public void Update()
     {
@@ -20,11 +20,10 @@ public class BoxBewarna : MonoBehaviour
 
     public void StartInteraction()
     {
-        gameObject = GetComponent<AnchorGameObject>();
         if (isPlayerNearby && !isInteracting)
         {
             isInteracting = true;
-            gameObject.executeInUpdate = false;
+            anchor.executeInUpdate = false;
             initialBoxPosition = transform.position;
         }
     }

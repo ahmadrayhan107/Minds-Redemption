@@ -15,7 +15,7 @@ public class KarakterBayangan : MonoBehaviour
     private Nyawa nyawa;
     private Animator animator;
 
-     private AnchorGameObject gameObject;
+    [SerializeField] private AnchorGameObject anchor;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,13 +26,12 @@ public class KarakterBayangan : MonoBehaviour
 
         moveLeft = false;
         moveRight = false;
-        gameObject = GetComponent<AnchorGameObject>();
     }
 
     public void PointerDownLeft()
     {
         moveLeft = true;
-        gameObject.executeInUpdate = false;
+        anchor.executeInUpdate = false;
     }
 
     public void PointerUpLeft()
@@ -43,7 +42,7 @@ public class KarakterBayangan : MonoBehaviour
     public void PointerDownRight()
     {
         moveRight = true;
-        gameObject.executeInUpdate = false;
+        anchor.executeInUpdate = false;
     }
 
     public void PointerUpRight()
@@ -68,7 +67,7 @@ public class KarakterBayangan : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
 
             hasJumped = true;
-            gameObject.executeInUpdate = false;
+            anchor.executeInUpdate = false;
         }
     }
 

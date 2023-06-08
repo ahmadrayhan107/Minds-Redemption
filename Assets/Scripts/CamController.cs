@@ -13,8 +13,8 @@ public class CamController : MonoBehaviour
 
     void LateUpdate()
     {
-        // if (transform.position != player1.position && transform.position != player2.position)
-        // {
+        if (transform.position != player.position)
+        {
             targetPost = player.position;
 
             Vector3 camBoundaryPos = new Vector3(
@@ -25,6 +25,6 @@ public class CamController : MonoBehaviour
 
             newPos = Vector3.Lerp(transform.position, camBoundaryPos, smoothSpeed);
             transform.position = newPos;
-        // }
+        }
     }
 }

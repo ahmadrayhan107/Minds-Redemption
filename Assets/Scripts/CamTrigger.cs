@@ -5,20 +5,20 @@ using UnityEngine;
 public class CamTrigger : MonoBehaviour
 {
     [SerializeField] private Vector3 newCamPos, newPlayerPos;
-    
-    [SerializeField] private GameObject player1;
-    [SerializeField] private GameObject player2;
     CamController camControl;
-
+    CameraViewportHandler cam;
 
     // Start is called before the first frame update
     void Start()
     {
         camControl = Camera.main.GetComponent<CamController>();
+        cam = CameraViewportHandler.Instance.GetComponent<CameraViewportHandler>();
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        if (player1.transform.position.x > 1.6 && player2.transform.position.x > 1.6) {
+    public void OnTriggerEnter2D(Collider2D other) {
+        cam.executeInUpdate = false;
+        if (other.CompareTag("Player")) {
+            
             camControl.minPos += newCamPos;
             camControl.maxPos += newCamPos;
             
