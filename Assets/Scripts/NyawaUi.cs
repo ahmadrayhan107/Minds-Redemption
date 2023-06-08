@@ -7,10 +7,10 @@ public class NyawaUi : MonoBehaviour
 {
     public Image darahImage;
 
-    public Sprite mental_bar_1;
-    public Sprite mental_bar_3;
-    public Sprite mental_bar_6;
-    public Sprite mental_bar_9;
+    public Sprite health_bar_0;
+    public Sprite health_bar_1;
+    public Sprite health_bar_2;
+    public Sprite health_bar_3;
 
     private void Start()
     {
@@ -23,16 +23,16 @@ public class NyawaUi : MonoBehaviour
         switch (jumlahNyawa)
         {
             case 3:
-                darahImage.sprite = mental_bar_1;
+                darahImage.sprite = health_bar_0;
                 break;
             case 2:
-                darahImage.sprite = mental_bar_3;
+                darahImage.sprite = health_bar_1;
                 break;
             case 1:
-                darahImage.sprite = mental_bar_6;
+                darahImage.sprite = health_bar_2;
                 break;
             case 0:
-                darahImage.sprite = mental_bar_9;
+                darahImage.sprite = health_bar_3;
                 break;
             default:
                 Debug.LogError("Jumlah nyawa tidak valid");

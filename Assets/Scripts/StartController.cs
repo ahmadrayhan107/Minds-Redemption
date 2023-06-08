@@ -8,4 +8,8 @@ public class StartController : MonoBehaviour
    public void LoadStageScene(){
     SceneManager.LoadScene("StageMenu");
    }
+
+   public void LoadNewStageScene(){
+    SceneManager.LoadScene("UnlockLvl2");
+   }
 }

@@ -48,7 +48,7 @@ public class Pijakan : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player1"))
         {
             isCharacterOnPijakan = true;
             jumpCount++;
@@ -57,7 +57,7 @@ public class Pijakan : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player1"))
         {
             isCharacterOnPijakan = false;
         }
