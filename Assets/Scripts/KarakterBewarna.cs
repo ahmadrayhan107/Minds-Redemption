@@ -56,7 +56,7 @@ public class KarakterBewarna : MonoBehaviour
         if (!hasJumped && isGrounded)
         {
             Quaternion rotation = transform.rotation;
-            float jumpHeight = -3f;
+            float jumpHeight = -5f;
             float jumpHorizontalSpeed = 5f;
 
             float jumpDirection = (rotation.eulerAngles.y == 0f) ? 1f : -1f;
@@ -139,6 +139,5 @@ public class KarakterBewarna : MonoBehaviour
     private void RespawnCharacter()
     {
         transform.position = initialPosition;
-
     }
 }

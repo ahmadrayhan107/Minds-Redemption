@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LoadLevel1 : MonoBehaviour
+public class LoadLevel2 : MonoBehaviour
 {
-   public void LoadStageScene(){
-    SceneManager.LoadScene("Level-1-1");
+    public void LoadStageScene(){
+    SceneManager.LoadScene("Level-2-1");
    }
 }
