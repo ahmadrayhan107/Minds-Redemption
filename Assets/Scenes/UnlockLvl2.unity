@@ -331,7 +331,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 630814831}
         m_TargetAssemblyTypeName: LoadLevel1, Assembly-CSharp
-        m_MethodName: LoadStageScene
+        m_MethodName: LoadObstacle1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -699,7 +699,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1916830894}
         m_TargetAssemblyTypeName: LoadLevel2, Assembly-CSharp
-        m_MethodName: LoadStageScene
+        m_MethodName: LoadObstacle1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

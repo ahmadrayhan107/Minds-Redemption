@@ -36,7 +36,7 @@ public class Pijakan : MonoBehaviour
     private void MoveStick()
     {
         float movement = stickMovementAmount;
-        Vector3 targetPosition = originalStickPosition + stick.transform.right * (movement * (jumpCount + 1));
+        Vector3 targetPosition = originalStickPosition + stick.transform.up * (movement * (jumpCount + 1));
         stick.transform.position = targetPosition;
 
         Rigidbody2D stickRigidbody = stick.GetComponent<Rigidbody2D>();
