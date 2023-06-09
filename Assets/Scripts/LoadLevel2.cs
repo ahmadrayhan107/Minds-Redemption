@@ -7,11 +7,11 @@ public class LoadLevel2 : MonoBehaviour
 {
     public void LoadObstacle1()
     {
-        SceneManager.LoadScene("Level-2-1");
+        SceneManager.LoadScene("HintTantangan3");
     }
 
     public void LoadObstacle2()
     {
-        SceneManager.LoadScene("Level-2-2");
+        SceneManager.LoadScene("HintTantangan4");
     }
 }

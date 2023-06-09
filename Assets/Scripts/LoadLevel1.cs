@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 public class LoadLevel1 : MonoBehaviour
 {
    public void LoadObstacle1(){
-    SceneManager.LoadScene("Level-1-1");
+    SceneManager.LoadScene("HintTantangan1");
    }
 
    public void LoadObstacle2(){
-    SceneManager.LoadScene("Level-1-2");
+    SceneManager.LoadScene("HintTantangan2");
    }
+
 }

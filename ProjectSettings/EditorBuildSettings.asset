@@ -53,6 +53,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Finished2.unity
     guid: 34337bac0f3ea93409b395554f79a3d3
+  - enabled: 1
+    path: Assets/Scenes/HintTantangan1.unity
+    guid: ecb39472f1e69c2459d566ad5627b579
+  - enabled: 1
+    path: Assets/Scenes/HintTantangan2.unity
+    guid: 1bfe5a12e462eeb4996b8165b685a5d3
+  - enabled: 1
+    path: Assets/Scenes/HintTantangan3.unity
+    guid: 88623aa6f6265bf48b99158907ca9e0a
+  - enabled: 1
+    path: Assets/Scenes/HintTantangan4.unity
+    guid: b8f86f0397d6515429191d7efb388a15
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 301d1131b84afaa46811c7efdc571fd2, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 52e97809912e71d4091b3b3dfcdfb271, type: 2}

@@ -331,7 +331,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 630814831}
         m_TargetAssemblyTypeName: LoadLevel1, Assembly-CSharp
-        m_MethodName: LoadStageScene
+        m_MethodName: LoadObstacle1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -391,6 +391,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19879ce99cf954745ba37977d60258d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hintSceneName1: HintTantangan1
+  levelSceneName1: Level-1-1
+  hintSceneName2: HintTantangan2
+  levelSceneName2: Level-1-2
+  hintDelay: 2
 --- !u!1 &788640401
 GameObject:
   m_ObjectHideFlags: 0
