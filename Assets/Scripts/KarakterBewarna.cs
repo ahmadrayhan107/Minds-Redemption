@@ -16,6 +16,9 @@ public class KarakterBewarna : MonoBehaviour
 
     private Animator animator;
 
+    // Inisiasi identifier lompatan
+    public float jumpHeight;
+
     [SerializeField] private AnchorGameObject anchor;
     // Start is called before the first frame update
     void Start()
@@ -55,8 +58,12 @@ public class KarakterBewarna : MonoBehaviour
     {
         if (!hasJumped && isGrounded)
         {
+            if (jumpHeight == 0)
+            {
+                jumpHeight = -2.8f;
+            }
+
             Quaternion rotation = transform.rotation;
-            float jumpHeight = -3f;
             float jumpHorizontalSpeed = 5f;
 
             float jumpDirection = (rotation.eulerAngles.y == 0f) ? 1f : -1f;

@@ -14,6 +14,9 @@ public class JendelaBayangan : MonoBehaviour
     private bool isInteracting = false;
     private bool isPlayerNearby = false; // Menandakan apakah karakter berada di dekat objek saklar
 
+    // Otomatis Memperkuat Daya Lompat
+    private KarakterBewarna jumpForce;
+
     public void Update()
     {
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
@@ -28,6 +31,8 @@ public class JendelaBayangan : MonoBehaviour
             objectToDisappear.SetActive(false);
             objectToDisappear2.SetActive(false);
             objectToDisappear3.SetActive(false);
+            jumpForce = FindObjectOfType<KarakterBewarna>();
+            jumpForce.jumpHeight = -5f;
         }
     }
 
