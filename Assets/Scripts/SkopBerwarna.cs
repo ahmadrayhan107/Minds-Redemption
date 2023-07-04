@@ -7,8 +7,9 @@ public class SkopBerwarna : MonoBehaviour
     public float interactionDistance = 2f; // Jarak maksimum antara karakter dan objek skop
 
     public GameObject objectToDisappear; // Objek yang akan menghilang
-
+    public GameObject objectToActivate;
     
+    private bool isObjectActive = false;
     private bool isInteracting = false;
     private bool isPlayerNearby = false; // Menandakan apakah karakter berada di dekat objek skop
 
@@ -16,6 +17,9 @@ public class SkopBerwarna : MonoBehaviour
     {
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
         isPlayerNearby = distanceToPlayer <= interactionDistance;
+
+        isObjectActive = !isObjectActive;
+        objectToActivate.SetActive(isObjectActive);
     }
 
     public void StartInteraction()
@@ -24,6 +28,7 @@ public class SkopBerwarna : MonoBehaviour
         {
             isInteracting = true;
             objectToDisappear.SetActive(false);
+            objectToActivate.SetActive(false);
         }
     }
 
