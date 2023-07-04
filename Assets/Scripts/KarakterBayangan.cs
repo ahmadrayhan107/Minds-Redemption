@@ -14,8 +14,6 @@ public class KarakterBayangan : MonoBehaviour
     private Vector2 initialPosition;
     private Nyawa nyawa;
     private Animator animator;
-
-    [SerializeField] private AnchorGameObject anchor;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +29,6 @@ public class KarakterBayangan : MonoBehaviour
     public void PointerDownLeft()
     {
         moveLeft = true;
-        anchor.executeInUpdate = false;
     }
 
     public void PointerUpLeft()
@@ -42,7 +39,6 @@ public class KarakterBayangan : MonoBehaviour
     public void PointerDownRight()
     {
         moveRight = true;
-        anchor.executeInUpdate = false;
     }
 
     public void PointerUpRight()
@@ -55,7 +51,7 @@ public class KarakterBayangan : MonoBehaviour
         if (!hasJumped && isGrounded)
         {
             Quaternion rotation = transform.rotation;
-            float jumpHeight = 2.8f;
+            float jumpHeight = 3.5f;
             float jumpHorizontalSpeed = 5f;
 
             float jumpDirection = (rotation.eulerAngles.y == 0f) ? 1f : -1f;
@@ -67,7 +63,6 @@ public class KarakterBayangan : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
 
             hasJumped = true;
-            anchor.executeInUpdate = false;
         }
     }
 
@@ -78,7 +73,7 @@ public class KarakterBayangan : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Constraint"))
+        if (collision.gameObject.CompareTag("pembatas"))
         {
             hasJumped = false;
             isGrounded = true;
@@ -87,7 +82,7 @@ public class KarakterBayangan : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Constraint"))
+        if (collision.gameObject.CompareTag("pembatas"))
         {
             isGrounded = false;
         }
@@ -99,8 +94,8 @@ public class KarakterBayangan : MonoBehaviour
     void Update()
     {
         MovePlayer();
-        animator.SetBool("IsRun", moveLeft || moveRight);
-        animator.SetBool("IsJump", hasJumped);
+       animator.SetBool("IsRun", moveLeft || moveRight);
+       animator.SetBool("IsJump", hasJumped);
     }
 
     private void MovePlayer()
@@ -145,5 +140,6 @@ public class KarakterBayangan : MonoBehaviour
     private void RespawnCharacter()
     {
         transform.position = initialPosition;
+
     }
 }

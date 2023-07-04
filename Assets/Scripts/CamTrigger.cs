@@ -1,28 +1,48 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CamTrigger : MonoBehaviour
 {
-    [SerializeField] private Vector3 newCamPos, newPlayerPos;
-    CamController camControl;
-    CameraViewportHandler cam;
+    public GameObject character1;
+    public GameObject character2;
+    public Transform cameraTransform;
+    public float cameraShiftAmount = 5f;
 
-    // Start is called before the first frame update
-    void Start()
+    private bool character1ReachedFinish = false;
+    private bool character2ReachedFinish = false;
+
+    private void OnTriggerEnter(Collider other)
     {
-        camControl = Camera.main.GetComponent<CamController>();
-        cam = CameraViewportHandler.Instance.GetComponent<CameraViewportHandler>();
+        if (other.gameObject == character1)
+        {
+            character1ReachedFinish = true;
+        }
+        else if (other.gameObject == character2)
+        {
+            character2ReachedFinish = true;
+        }
+
+        if (character1ReachedFinish && character2ReachedFinish)
+        {
+            ShiftCamera();
+            MoveCharacters();
+        }
     }
 
-    public void OnTriggerEnter2D(Collider2D other) {
-        cam.executeInUpdate = false;
-        if (other.CompareTag("Player")) {
-            
-            camControl.minPos += newCamPos;
-            camControl.maxPos += newCamPos;
-            
-            other.transform.position += newPlayerPos;
-        }
+    private void ShiftCamera()
+    {
+        Vector3 cameraPosition = cameraTransform.position;
+        cameraPosition.x += cameraShiftAmount;
+        cameraTransform.position = cameraPosition;
+    }
+
+    private void MoveCharacters()
+    {
+        Vector3 character1Position = character1.transform.position;
+        character1Position.x += cameraShiftAmount;
+        character1.transform.position = character1Position;
+
+        Vector3 character2Position = character2.transform.position;
+        character2Position.x += cameraShiftAmount;
+        character2.transform.position = character2Position;
     }
 }
