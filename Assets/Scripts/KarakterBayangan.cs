@@ -145,6 +145,5 @@ public class KarakterBayangan : MonoBehaviour
     private void RespawnCharacter()
     {
         transform.position = initialPosition;
-
     }
 }
