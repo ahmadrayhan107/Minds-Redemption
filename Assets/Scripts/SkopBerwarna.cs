@@ -8,6 +8,8 @@ public class SkopBerwarna : MonoBehaviour
 
     public GameObject objectToDisappear; // Objek yang akan menghilang
     public GameObject objectToActivate;
+    public GameObject objectToActivate2;
+    public GameObject objectToInActivate;
     
     private bool isObjectActive = false;
     private bool isInteracting = false;
@@ -19,7 +21,6 @@ public class SkopBerwarna : MonoBehaviour
         isPlayerNearby = distanceToPlayer <= interactionDistance;
 
         isObjectActive = !isObjectActive;
-        objectToActivate.SetActive(isObjectActive);
     }
 
     public void StartInteraction()
@@ -28,7 +29,9 @@ public class SkopBerwarna : MonoBehaviour
         {
             isInteracting = true;
             objectToDisappear.SetActive(false);
-            objectToActivate.SetActive(false);
+            objectToActivate.SetActive(true);
+            objectToActivate2.SetActive(true);
+            objectToInActivate.SetActive(false);
         }
     }
 
