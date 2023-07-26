@@ -141,10 +141,16 @@ public class KarakterBewarna : MonoBehaviour
             RespawnCharacter();
             nyawa.KurangiNyawa(1);
         }
+        if (collision.CompareTag("Virus"))
+        {
+            RespawnCharacter();
+            nyawa.KurangiNyawa(1);
+        }
     }
 
     private void RespawnCharacter()
     {
         transform.position = initialPosition;
     }
+    
 }

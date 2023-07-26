@@ -10,6 +10,9 @@ TagManager:
   - Box
   - Player1
   - Player2
+  - Virus
+  - Benteng
+  - Peluru
   layers:
   - Default
   - TransparentFX
