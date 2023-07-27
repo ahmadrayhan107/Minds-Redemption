@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Stone : MonoBehaviour
+public class Stone1 : MonoBehaviour
 {
     public Transform player;
 
@@ -27,7 +27,7 @@ public class Stone : MonoBehaviour
 
     public void startInteraction()
     {
-        if (!isInteracted && player.position.x >= transform.position.x && player.position.x <= -0.5f)
+        if (!isInteracted && player.position.x >= transform.position.x && player.position.x <= 0.2f)
         {
             GetComponent<AnchorGameObject>().executeInUpdate = false;
             isInteracted = true;
@@ -39,7 +39,6 @@ public class Stone : MonoBehaviour
             Rigidbody2D rb = stoneAttack.AddComponent<Rigidbody2D>();
             rb.mass = 0.1f;
             tarantulaAtk = true;
-            tarantula.GetComponent<AnchorGameObject>().executeInUpdate = false;
         }
     }
 

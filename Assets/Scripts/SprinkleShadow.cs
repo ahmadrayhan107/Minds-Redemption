@@ -14,21 +14,28 @@ public class SprinkleShadow : MonoBehaviour
 
     public Sprite growTree;
 
+    public Sprite finalTree;
+
     public GameObject smoke;
 
     private bool isInteraction = false;
+
     private int count = 1;
+
+    private float spawnDelay = 2f;
 
     public void startInteraction()
     {
         if (!isInteraction && player.transform.position.x >= transform.position.x)
         {
+            tree.GetComponent<AnchorGameObject>().executeInUpdate = false;
             if (count == 1)
             {
                 Vector3 scale = tree.transform.localScale;
                 scale = scale * 0.02f;
                 tree.transform.localScale = scale;
                 SpriteRenderer sr = tree.AddComponent<SpriteRenderer>();
+                sr.sortingOrder = 1;
                 Spawn(sr, seed);
                 Transform smokeChild = smoke.transform.GetChild(0);
                 Destroy(smokeChild.gameObject);
@@ -54,7 +61,9 @@ public class SprinkleShadow : MonoBehaviour
                 SpriteRenderer sr = tree.GetComponent<SpriteRenderer>();
                 sr.sprite = null;
                 Spawn(sr, growTree);
+                StartCoroutine(spawnObjectWithDelay(sr, finalTree));
                 Destroy(smoke.gameObject);
+                count++;
             }
 
             isInteraction = true;
@@ -73,5 +82,19 @@ public class SprinkleShadow : MonoBehaviour
     private void Spawn(SpriteRenderer sr, Sprite render)
     {
         sr.sprite = render;
+    }
+
+    private IEnumerator spawnObjectWithDelay(SpriteRenderer sr, Sprite render)
+    {
+        while (true)
+        {
+            Debug.Log("Test");
+            yield return new WaitForSeconds(spawnDelay);
+            tree.transform.position = new Vector3(0.26f, 1.9f, 0);
+            tree.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);
+
+            sr.sprite = null;
+            Spawn(sr, render);
+        }
     }
 }

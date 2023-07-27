@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Level_1_2 : MonoBehaviour
+public class Level_3_3 : MonoBehaviour
 {
     private bool player1Touched = false;
 
@@ -27,7 +27,7 @@ public class Level_1_2 : MonoBehaviour
     {
         if (player1Touched && player2Touched)
         {
-            SceneManager.LoadScene("HintTantangan2");
+            SceneManager.LoadScene("Level-3-3");
         }
     }
 }

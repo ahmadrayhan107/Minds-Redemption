@@ -9,4 +9,9 @@ public class LoadLevel3 : MonoBehaviour
     {
         SceneManager.LoadScene("Level-3-2");
     }
+
+    public void LoadObstacle3()
+    {
+        SceneManager.LoadScene("Level-3-3");
+    }
 }
