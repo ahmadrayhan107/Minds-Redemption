@@ -9,9 +9,4 @@ public class HomeButton : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
-
-    public void LoadHomeScene2()
-    {
-        SceneManager.LoadScene("MainMenu2");
-    }
 }

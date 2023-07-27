@@ -126,7 +126,7 @@ public class KarakterBayangan : MonoBehaviour
         rb.velocity = new Vector2(horizontalMove, rb.velocity.y);
     }
 
-     private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("lubang"))
         {

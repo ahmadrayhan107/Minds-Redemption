@@ -41,6 +41,10 @@ public class Nyawa : MonoBehaviour
             {
                 SceneManager.LoadScene("GameOver3");
             }
+            else if (SceneManager.GetSceneByName("level-3-2").isLoaded)
+            {
+                SceneManager.LoadScene("GameOver6");
+            }
         }
     }
 }

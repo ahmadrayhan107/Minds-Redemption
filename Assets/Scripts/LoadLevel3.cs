@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NextScene : MonoBehaviour
+public class LoadLevel3 : MonoBehaviour
 {
-    public void LoadNextScene()
+    public void LoadObstacle2()
     {
-        SceneManager.LoadScene("StageMenu");
+        SceneManager.LoadScene("Level-3-2");
     }
 }
