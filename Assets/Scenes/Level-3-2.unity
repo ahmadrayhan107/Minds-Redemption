@@ -1689,7 +1689,7 @@ MonoBehaviour:
   seed: {fileID: 21300000, guid: e4664c20daac10c479d3e403a4552773, type: 3}
   growSeed: {fileID: 21300000, guid: 0f2877932de136f4e9b177301c19425b, type: 3}
   growTree: {fileID: 21300000, guid: 56cde271ce73248438fa7ec7fb0be171, type: 3}
-  finalTree: {fileID: 21300000, guid: d8c30e3a11aedb848b395a2bf17f8c2b, type: 3}
+  finalTree: {fileID: 21300000, guid: a796baa5d043e9246b3228c34b06ecda, type: 3}
   smoke: {fileID: 1863160989}
 --- !u!114 &742974278
 MonoBehaviour:
@@ -2260,7 +2260,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 3bc9ea44c1e822b46be36fc8e739aa5b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -3442,7 +3442,7 @@ MonoBehaviour:
   seed: {fileID: 21300000, guid: c57eefe935ca2b0478f44c55ec6f0b0f, type: 3}
   growSeed: {fileID: 21300000, guid: 4927562c5788d78409dc6bda693623d0, type: 3}
   growTree: {fileID: 21300000, guid: f1dd332458f4da44b9d04d4010e20202, type: 3}
-  finalTree: {fileID: 21300000, guid: f244345d90f0e0b42b7c72ceb779a9ff, type: 3}
+  finalTree: {fileID: 21300000, guid: abbd8ba14be10d8449a83752c45fef03, type: 3}
   smoke: {fileID: 671015654}
 --- !u!1 &1774005852
 GameObject:
