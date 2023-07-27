@@ -1,17 +1,9 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 <<<<<<<< Updated upstream:Assets/Scripts/BentengController.cs.meta
 guid: 3bc0f367d35f1a5498653f4fad06040d
 ========
 guid: ac08726287fae9348af3ff5929a1710f
 >>>>>>>> Stashed changes:Assets/Scripts/IncreasedTuntutan.cs.meta
-=======
-<<<<<<<< HEAD:Assets/Scripts/BentengController.cs.meta
-guid: 3bc0f367d35f1a5498653f4fad06040d
-========
-guid: 0e1241227161a764cbbe3caf0addcbbf
->>>>>>>> fc9ac6369cef0a28858df30a13962afca180553c:Assets/Scripts/PeluruBayanganController.cs.meta
->>>>>>> Stashed changes
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
