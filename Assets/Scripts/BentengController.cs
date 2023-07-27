@@ -3,11 +3,25 @@ using UnityEngine.UI;
 
 public class BentengController : MonoBehaviour
 {
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+    public int maxNyawa = 3;
+    public Image[] nyawaImages;
+    public Sprite[] nyawaSprites;
+
+    private int currentNyawa = 3;
+=======
+>>>>>>> Stashed changes
     public int maxNyawa = 5;
     public Image[] nyawaImages;
     public Sprite[] nyawaSprites;
 
     private int currentNyawa = 5;
+<<<<<<< Updated upstream
+=======
+>>>>>>> fc9ac6369cef0a28858df30a13962afca180553c
+>>>>>>> Stashed changes
 
     private void Start()
     {
