@@ -35,7 +35,7 @@ public class SprinkleShadow : MonoBehaviour
                 scale = scale * 0.02f;
                 tree.transform.localScale = scale;
                 SpriteRenderer sr = tree.AddComponent<SpriteRenderer>();
-                sr.sortingOrder = 1;
+                sr.sortingOrder = 2;
                 Spawn(sr, seed);
                 Transform smokeChild = smoke.transform.GetChild(0);
                 Destroy(smokeChild.gameObject);
@@ -88,7 +88,6 @@ public class SprinkleShadow : MonoBehaviour
     {
         while (true)
         {
-            Debug.Log("Test");
             yield return new WaitForSeconds(spawnDelay);
             tree.transform.position = new Vector3(0.26f, 1.9f, 0);
             tree.transform.localScale = new Vector3(0.25f, 0.25f, 0.25f);

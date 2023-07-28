@@ -5,8 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class FinishScene2 : MonoBehaviour
 {
-    public void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag("Player2")) {
+    private bool player1Touched = false;
+
+    private bool player2Touched = false;
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player1"))
+        {
+            player1Touched = true;
+        }
+        else if (other.CompareTag("Player2"))
+        {
+            player2Touched = true;
+        }
+
+        CheckPlayerStatus();
+    }
+
+    public void CheckPlayerStatus()
+    {
+        if (player1Touched && player2Touched)
+        {
             SceneManager.LoadScene("Finished2");
         }
     }

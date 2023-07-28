@@ -388,6 +388,7 @@ GameObject:
   - component: {fileID: 131294789}
   - component: {fileID: 131294788}
   - component: {fileID: 131294790}
+  - component: {fileID: 131294791}
   m_Layer: 0
   m_Name: Papan (Shadow)
   m_TagString: Constraint
@@ -455,7 +456,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 131294787}
   m_LocalRotation: {x: -0, y: -0, z: -0.0035291542, w: 0.9999938}
-  m_LocalPosition: {x: -0.172, y: 0.754, z: -0.017835177}
+  m_LocalPosition: {x: -0.13, y: 0.71, z: 0}
   m_LocalScale: {x: 0.25, y: 0.38, z: 0.25}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -488,6 +489,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.6562464, y: 0.57452744}
   m_EdgeRadius: 0
+--- !u!114 &131294791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 131294787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 4
+  anchorOffset: {x: -0.13, y: 0.71, z: 0}
 --- !u!1 &151284299
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,6 +516,7 @@ GameObject:
   - component: {fileID: 151284300}
   - component: {fileID: 151284303}
   - component: {fileID: 151284304}
+  - component: {fileID: 151284305}
   m_Layer: 0
   m_Name: T Hati3 (Shadow)
   m_TagString: Constraint
@@ -567,7 +584,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151284299}
   m_LocalRotation: {x: -0, y: -0, z: -0.0064854147, w: 0.99997896}
-  m_LocalPosition: {x: 2.52, y: 1.13, z: -0.017835177}
+  m_LocalPosition: {x: 2.5725, y: 1.25, z: 0}
   m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -603,6 +620,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.48723072
   m_Center: {x: 2.6092849, y: 2.7510471, z: 0}
+--- !u!114 &151284305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151284299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 5
+  anchorOffset: {x: -0.24, y: 1.25, z: 0}
 --- !u!1 &191176509
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,6 +647,7 @@ GameObject:
   - component: {fileID: 191176511}
   - component: {fileID: 191176514}
   - component: {fileID: 191176513}
+  - component: {fileID: 191176515}
   m_Layer: 0
   m_Name: F Hati3 (Colored)
   m_TagString: Constraint
@@ -682,7 +715,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191176509}
   m_LocalRotation: {x: -0, y: -0, z: 0.029493047, w: 0.999565}
-  m_LocalPosition: {x: 2.29, y: -0.71, z: -0.017835177}
+  m_LocalPosition: {x: 1.1025, y: 1.24, z: 0}
   m_LocalScale: {x: 0.38, y: 0.38, z: 0.38}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -720,6 +753,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.2874826
   m_Center: {x: -0.25911996, y: 0.23220664, z: 0}
+--- !u!114 &191176515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191176509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 5
+  anchorOffset: {x: -1.71, y: 1.24, z: 0}
 --- !u!1 &202953106
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,6 +779,7 @@ GameObject:
   - component: {fileID: 202953108}
   - component: {fileID: 202953107}
   - component: {fileID: 202953109}
+  - component: {fileID: 202953110}
   m_Layer: 0
   m_Name: KepingPuzzle4 (Shadow)
   m_TagString: Constraint
@@ -798,7 +847,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 202953106}
   m_LocalRotation: {x: -0, y: -0, z: -0.0064854147, w: 0.99997896}
-  m_LocalPosition: {x: 0.05, y: 2.76, z: -0.017835177}
+  m_LocalPosition: {x: 0.06, y: 2.77, z: 0}
   m_LocalScale: {x: 0.14, y: 0.14, z: 0.14}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -818,6 +867,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToInActivate: {fileID: 202953106}
+--- !u!114 &202953110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202953106}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 7
+  anchorOffset: {x: 0.06, y: -2.23, z: 0}
 --- !u!1 &307172923
 GameObject:
   m_ObjectHideFlags: 0
@@ -1100,6 +1164,7 @@ GameObject:
   - component: {fileID: 346172718}
   - component: {fileID: 346172717}
   - component: {fileID: 346172719}
+  - component: {fileID: 346172720}
   m_Layer: 0
   m_Name: CompletePuzzle
   m_TagString: Untagged
@@ -1167,7 +1232,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 346172716}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08, y: 2.76, z: 0}
+  m_LocalPosition: {x: 0.06, y: 2.76, z: 0}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1187,6 +1252,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToInActivate: {fileID: 346172716}
+--- !u!114 &346172720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 346172716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 7
+  anchorOffset: {x: 0.06, y: -2.24, z: 0}
 --- !u!1 &358478664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1267,6 +1347,7 @@ GameObject:
   - component: {fileID: 366351080}
   - component: {fileID: 366351085}
   - component: {fileID: 366351086}
+  - component: {fileID: 366351087}
   m_Layer: 0
   m_Name: 'T Hati4 (Colored)  '
   m_TagString: Constraint
@@ -1334,7 +1415,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 366351079}
   m_LocalRotation: {x: -0, y: -0, z: 0.22495145, w: 0.97437}
-  m_LocalPosition: {x: 0.26, y: -0.5, z: -0.017835177}
+  m_LocalPosition: {x: 0, y: -0.54, z: 0}
   m_LocalScale: {x: 0.08, y: 0.08, z: 0.08}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1373,6 +1454,21 @@ MonoBehaviour:
   objectToActivate3: {fileID: 2081757039}
   Puzzle: {fileID: 202953106}
   objectToInActivate: {fileID: 366351079}
+--- !u!114 &366351087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 366351079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 4
+  anchorOffset: {x: 0, y: -0.54, z: 0}
 --- !u!1 &501826543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1484,6 +1580,7 @@ GameObject:
   - component: {fileID: 607492941}
   - component: {fileID: 607492940}
   - component: {fileID: 607492942}
+  - component: {fileID: 607492943}
   m_Layer: 0
   m_Name: KepingPuzzle1 (Shadow)
   m_TagString: Constraint
@@ -1551,7 +1648,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 607492939}
   m_LocalRotation: {x: -0, y: -0, z: -0.0064854147, w: 0.99997896}
-  m_LocalPosition: {x: 0.05, y: 2.76, z: -0.017835177}
+  m_LocalPosition: {x: 0.06, y: 2.78, z: 0}
   m_LocalScale: {x: 0.14, y: 0.14, z: 0.14}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1571,6 +1668,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToInActivate: {fileID: 607492939}
+--- !u!114 &607492943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607492939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 7
+  anchorOffset: {x: 0.06, y: -2.22, z: 0}
 --- !u!1 &726233064
 GameObject:
   m_ObjectHideFlags: 0
@@ -1801,6 +1913,7 @@ GameObject:
   - component: {fileID: 760142627}
   - component: {fileID: 760142629}
   - component: {fileID: 760142630}
+  - component: {fileID: 760142631}
   m_Layer: 0
   m_Name: 'IncreasedTuntutan3 (Colored) '
   m_TagString: Untagged
@@ -1867,14 +1980,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 760142626}
-  m_LocalRotation: {x: -0, y: -0, z: -0.261514, w: 0.9651997}
-  m_LocalPosition: {x: -0.71, y: -2.51, z: -0.017835177}
-  m_LocalScale: {x: 0.14, y: 0.14, z: 0.14}
+  m_LocalRotation: {x: 0, y: 0, z: -0.07610986, w: 0.9970995}
+  m_LocalPosition: {x: -0.76, y: -2.5, z: 0}
+  m_LocalScale: {x: 0.11, y: 0.11, z: 0.11}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 31
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30.32}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -8.73}
 --- !u!114 &760142629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2149,6 +2262,21 @@ PolygonCollider2D:
       - {x: -6.29, y: -1.52}
       - {x: -6.12, y: -1.48}
       - {x: -5.93, y: -1.42}
+--- !u!114 &760142631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760142626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 1
+  anchorOffset: {x: -0.76, y: 2.5, z: 0}
 --- !u!1 &785925620
 GameObject:
   m_ObjectHideFlags: 0
@@ -2288,6 +2416,7 @@ GameObject:
   - component: {fileID: 790395978}
   - component: {fileID: 790395981}
   - component: {fileID: 790395982}
+  - component: {fileID: 790395983}
   m_Layer: 0
   m_Name: 'IncreasedTuntutan2 (Colored) '
   m_TagString: Untagged
@@ -2355,7 +2484,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 790395977}
   m_LocalRotation: {x: -0, y: -0, z: -0.9679546, w: -0.25112548}
-  m_LocalPosition: {x: 0.35, y: -3.34, z: -0.017835177}
+  m_LocalPosition: {x: 0.24, y: -3.45, z: 0}
   m_LocalScale: {x: 0.099999994, y: 0.099999994, z: 0.099999994}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2661,6 +2790,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToInActivate: {fileID: 790395977}
+--- !u!114 &790395983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790395977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 1
+  anchorOffset: {x: 0.24, y: 1.55, z: 0}
 --- !u!1 &972726584
 GameObject:
   m_ObjectHideFlags: 0
@@ -2672,6 +2816,7 @@ GameObject:
   - component: {fileID: 972726586}
   - component: {fileID: 972726585}
   - component: {fileID: 972726587}
+  - component: {fileID: 972726588}
   m_Layer: 0
   m_Name: 'Tuntutan1 (Colored)  '
   m_TagString: Untagged
@@ -2739,7 +2884,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972726584}
   m_LocalRotation: {x: -0, y: -0, z: -0.4701623, w: 0.88258004}
-  m_LocalPosition: {x: -0.24, y: -1.94, z: -0.017835177}
+  m_LocalPosition: {x: -0.58, y: -1.76, z: 0}
   m_LocalScale: {x: 0.11, y: 0.11, z: 0.11}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -2759,6 +2904,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.87590986
   m_Center: {x: 1.3920096, y: 0.09376307, z: 0}
+--- !u!114 &972726588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972726584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 1
+  anchorOffset: {x: -0.58, y: 3.24, z: 0}
 --- !u!1 &976805706
 GameObject:
   m_ObjectHideFlags: 0
@@ -2901,6 +3061,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1065892334}
   - component: {fileID: 1065892333}
+  - component: {fileID: 1065892335}
   m_Layer: 0
   m_Name: 'Other Pict (Colored) '
   m_TagString: Untagged
@@ -2968,13 +3129,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1065892332}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.72, y: -1.98, z: -0.017835177}
+  m_LocalPosition: {x: 1.8924999, y: -2.05, z: 0}
   m_LocalScale: {x: 0.53, y: 0.53, z: 0.53}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1065892335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065892332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 2
+  anchorOffset: {x: -0.92, y: 2.95, z: 0}
 --- !u!1 &1082502390
 GameObject:
   m_ObjectHideFlags: 0
@@ -3296,6 +3472,7 @@ GameObject:
   - component: {fileID: 1137141202}
   - component: {fileID: 1137141204}
   - component: {fileID: 1137141205}
+  - component: {fileID: 1137141206}
   m_Layer: 0
   m_Name: 'F Hati2 (Colored) '
   m_TagString: Constraint
@@ -3363,7 +3540,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1137141201}
   m_LocalRotation: {x: -0, y: -0, z: 0.43697032, w: 0.899476}
-  m_LocalPosition: {x: -1.81, y: -0.88, z: -0.017835177}
+  m_LocalPosition: {x: -1.62, y: -0.92, z: 0}
   m_LocalScale: {x: 0.11, y: 0.11, z: 0.11}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3457,6 +3634,21 @@ MonoBehaviour:
   objectToActivate2: {fileID: 790395977}
   objectToActivate3: {fileID: 760142626}
   objectToInActivate: {fileID: 1137141201}
+--- !u!114 &1137141206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137141201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 4
+  anchorOffset: {x: -1.62, y: -0.92, z: 0}
 --- !u!1 &1179080435
 GameObject:
   m_ObjectHideFlags: 0
@@ -3467,6 +3659,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1179080437}
   - component: {fileID: 1179080436}
+  - component: {fileID: 1179080438}
   m_Layer: 0
   m_Name: 'Fam Pict (Colored) '
   m_TagString: Untagged
@@ -3534,13 +3727,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1179080435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.15, y: -2.49, z: -0.017835177}
+  m_LocalPosition: {x: 0.15, y: -2.51, z: 0}
   m_LocalScale: {x: 0.53, y: 0.53, z: 0.53}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1179080438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1179080435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 1
+  anchorOffset: {x: 0.15, y: 2.49, z: 0}
 --- !u!1 &1192996251
 GameObject:
   m_ObjectHideFlags: 0
@@ -3791,6 +3999,7 @@ GameObject:
   - component: {fileID: 1214776104}
   - component: {fileID: 1214776103}
   - component: {fileID: 1214776105}
+  - component: {fileID: 1214776106}
   m_Layer: 0
   m_Name: 'Desk (Shadow) '
   m_TagString: Constraint
@@ -3858,7 +4067,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1214776102}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.62, y: 1.03, z: -0.017835177}
+  m_LocalPosition: {x: 1.6425, y: 1.14, z: 0}
   m_LocalScale: {x: 0.8999999, y: 0.8999999, z: 0.8999999}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -3891,6 +4100,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.532061, y: 0.33577257}
   m_EdgeRadius: 0
+--- !u!114 &1214776106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214776102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 5
+  anchorOffset: {x: -1.17, y: 1.14, z: 0}
 --- !u!1 &1277405877
 GameObject:
   m_ObjectHideFlags: 0
@@ -4070,6 +4294,7 @@ GameObject:
   - component: {fileID: 1279452374}
   - component: {fileID: 1279452378}
   - component: {fileID: 1279452379}
+  - component: {fileID: 1279452380}
   m_Layer: 0
   m_Name: 'T Hati2 (Shadow)  '
   m_TagString: Constraint
@@ -4137,7 +4362,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279452373}
   m_LocalRotation: {x: -0, y: -0, z: -0.36304656, w: 0.93177104}
-  m_LocalPosition: {x: -2.61, y: 0.94, z: -0.017835177}
+  m_LocalPosition: {x: -2.3525, y: 0.92, z: 0}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -4173,6 +4398,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.72863317
   m_Center: {x: 0.69227564, y: -1.7105806, z: 0}
+--- !u!114 &1279452380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279452373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 3
+  anchorOffset: {x: 0.46, y: 0.92, z: 0}
 --- !u!1 &1287231860
 GameObject:
   m_ObjectHideFlags: 0
@@ -4354,6 +4594,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1336724136}
   - component: {fileID: 1336724135}
+  - component: {fileID: 1336724137}
   m_Layer: 0
   m_Name: Sofa (Shadow)
   m_TagString: Untagged
@@ -4421,13 +4662,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336724134}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.23, y: 0.81, z: -0.017835177}
+  m_LocalPosition: {x: -2.8125, y: 0.71, z: 0}
   m_LocalScale: {x: 0.55, y: 0.55, z: 0.55}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1336724137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336724134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 3
+  anchorOffset: {x: 0, y: 0.71, z: 0}
 --- !u!1 &1339958471
 GameObject:
   m_ObjectHideFlags: 0
@@ -5002,6 +5258,7 @@ GameObject:
   - component: {fileID: 1492473685}
   - component: {fileID: 1492473684}
   - component: {fileID: 1492473686}
+  - component: {fileID: 1492473687}
   m_Layer: 0
   m_Name: KepingPuzzle3 (Shadow)
   m_TagString: Constraint
@@ -5069,7 +5326,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1492473683}
   m_LocalRotation: {x: -0, y: -0, z: -0.0064854147, w: 0.99997896}
-  m_LocalPosition: {x: 0.05, y: 2.76, z: -0.017835177}
+  m_LocalPosition: {x: 0.06, y: 2.77, z: 0}
   m_LocalScale: {x: 0.14, y: 0.14, z: 0.14}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5089,6 +5346,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToInActivate: {fileID: 1492473683}
+--- !u!114 &1492473687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492473683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 7
+  anchorOffset: {x: 0.06, y: -2.23, z: 0}
 --- !u!1 &1514511785
 GameObject:
   m_ObjectHideFlags: 0
@@ -5099,6 +5371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1514511787}
   - component: {fileID: 1514511786}
+  - component: {fileID: 1514511788}
   m_Layer: 0
   m_Name: 'Other Pict (Colored) '
   m_TagString: Untagged
@@ -5166,13 +5439,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1514511785}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4, y: -1.96, z: -0.017835177}
+  m_LocalPosition: {x: -1.3825, y: -1.94, z: 0}
   m_LocalScale: {x: 0.53, y: 0.53, z: 0.53}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1514511788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514511785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 0
+  anchorOffset: {x: 1.43, y: 3.06, z: 0}
 --- !u!1 &1528408727
 GameObject:
   m_ObjectHideFlags: 0
@@ -5350,6 +5638,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1595286577}
   - component: {fileID: 1595286576}
+  - component: {fileID: 1595286578}
   m_Layer: 0
   m_Name: Puzzle (Shadow)
   m_TagString: Constraint
@@ -5417,13 +5706,28 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1595286575}
   m_LocalRotation: {x: -0, y: -0, z: -0.0064854147, w: 0.99997896}
-  m_LocalPosition: {x: 0.05, y: 2.76, z: -0.017835177}
+  m_LocalPosition: {x: 0.06, y: 2.76, z: 0}
   m_LocalScale: {x: 0.14, y: 0.14, z: 0.14}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.743}
+--- !u!114 &1595286578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595286575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 7
+  anchorOffset: {x: 0.06, y: -2.24, z: 0}
 --- !u!1 &1611175749
 GameObject:
   m_ObjectHideFlags: 0
@@ -5880,6 +6184,7 @@ GameObject:
   - component: {fileID: 1730855336}
   - component: {fileID: 1730855335}
   - component: {fileID: 1730855337}
+  - component: {fileID: 1730855338}
   m_Layer: 0
   m_Name: KepingPuzzle2 (Shadow)
   m_TagString: Constraint
@@ -5947,7 +6252,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730855334}
   m_LocalRotation: {x: -0, y: -0, z: -0.0064854147, w: 0.99997896}
-  m_LocalPosition: {x: 0.05, y: 2.76, z: -0.017835177}
+  m_LocalPosition: {x: 0.06, y: 2.77, z: 0}
   m_LocalScale: {x: 0.14, y: 0.14, z: 0.14}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5967,6 +6272,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToInActivate: {fileID: 1730855334}
+--- !u!114 &1730855338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730855334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 7
+  anchorOffset: {x: 0.06, y: -2.23, z: 0}
 --- !u!1 &1783569666
 GameObject:
   m_ObjectHideFlags: 0
@@ -6179,6 +6499,7 @@ GameObject:
   - component: {fileID: 1980317372}
   - component: {fileID: 1980317371}
   - component: {fileID: 1980317373}
+  - component: {fileID: 1980317374}
   m_Layer: 0
   m_Name: 'Tuntutan3 (Colored) '
   m_TagString: Untagged
@@ -6246,7 +6567,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1980317370}
   m_LocalRotation: {x: -0, y: -0, z: 0.30872574, w: 0.95115113}
-  m_LocalPosition: {x: -0.05, y: -2.99, z: -0.017835177}
+  m_LocalPosition: {x: -0.43, y: -3.1, z: 0}
   m_LocalScale: {x: 0.11, y: 0.11, z: 0.11}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6266,6 +6587,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 1.8338939
   m_Center: {x: -0.000012789227, y: -8.406108, z: 0}
+--- !u!114 &1980317374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1980317370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 1
+  anchorOffset: {x: -0.43, y: 1.9, z: 0}
 --- !u!1 &2068008243
 GameObject:
   m_ObjectHideFlags: 0
@@ -6277,6 +6613,7 @@ GameObject:
   - component: {fileID: 2068008245}
   - component: {fileID: 2068008244}
   - component: {fileID: 2068008246}
+  - component: {fileID: 2068008247}
   m_Layer: 0
   m_Name: 'Tuntutan2 (Colored)  '
   m_TagString: Untagged
@@ -6344,7 +6681,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2068008243}
   m_LocalRotation: {x: -0, y: -0, z: -0.9956278, w: 0.093409546}
-  m_LocalPosition: {x: 0.96, y: -2.76, z: -0.017835177}
+  m_LocalPosition: {x: 1.08, y: -3.1, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6364,6 +6701,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 2.377884
   m_Center: {x: -2.9230099, y: 4.939115, z: 0}
+--- !u!114 &2068008247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068008243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 1
+  anchorOffset: {x: 1.08, y: 1.9, z: 0}
 --- !u!1 &2081757039
 GameObject:
   m_ObjectHideFlags: 0
@@ -6376,6 +6728,7 @@ GameObject:
   - component: {fileID: 2081757041}
   - component: {fileID: 2081757043}
   - component: {fileID: 2081757044}
+  - component: {fileID: 2081757045}
   m_Layer: 0
   m_Name: 'IncreasedTuntutan1 (Colored) '
   m_TagString: Untagged
@@ -6443,7 +6796,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081757039}
   m_LocalRotation: {x: -0.004356782, y: -0.000016599106, z: -0.9319488, w: 0.3625638}
-  m_LocalPosition: {x: 0.81, y: -1.75, z: -0.02}
+  m_LocalPosition: {x: 0.75, y: -1.4100001, z: 0}
   m_LocalScale: {x: 0.11, y: 0.11, z: 0.11}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6708,6 +7061,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToInActivate: {fileID: 2081757039}
+--- !u!114 &2081757045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081757039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 1
+  anchorOffset: {x: 0.75, y: 3.59, z: 0}
 --- !u!1 &2126262858
 GameObject:
   m_ObjectHideFlags: 0
@@ -6720,6 +7088,7 @@ GameObject:
   - component: {fileID: 2126262859}
   - component: {fileID: 2126262862}
   - component: {fileID: 2126262863}
+  - component: {fileID: 2126262864}
   m_Layer: 0
   m_Name: 'T Hati1 (Shadow) '
   m_TagString: Constraint
@@ -6787,7 +7156,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126262858}
   m_LocalRotation: {x: -0, y: -0, z: -0.0064854147, w: 0.99997896}
-  m_LocalPosition: {x: 0.022, y: 0.812, z: -0.017835177}
+  m_LocalPosition: {x: -0.21, y: 0.76, z: 0}
   m_LocalScale: {x: 0.049999997, y: 0.049999997, z: 0.049999997}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6823,6 +7192,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.62768584
   m_Center: {x: 6.1579776, y: 1.2627691, z: 0}
+--- !u!114 &2126262864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126262858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 4
+  anchorOffset: {x: -0.21, y: 0.76, z: 0}
 --- !u!1 &2137222229
 GameObject:
   m_ObjectHideFlags: 0
@@ -6835,6 +7219,7 @@ GameObject:
   - component: {fileID: 2137222230}
   - component: {fileID: 2137222232}
   - component: {fileID: 2137222233}
+  - component: {fileID: 2137222234}
   m_Layer: 0
   m_Name: 'F Hati (Shadow) '
   m_TagString: Untagged
@@ -6902,7 +7287,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2137222229}
   m_LocalRotation: {x: -0, y: -0, z: 0.43697032, w: 0.899476}
-  m_LocalPosition: {x: -1.17, y: 0.02, z: -0.017835177}
+  m_LocalPosition: {x: -1.23, y: 0.06, z: 0}
   m_LocalScale: {x: 0.11, y: 0.11, z: 0.11}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -6937,3 +7322,18 @@ MonoBehaviour:
   player: {fileID: 1676701639}
   interactionDistance: 1
   objectToInActivate: {fileID: 2137222229}
+--- !u!114 &2137222234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2137222229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aa4a905a021fe44be52e32f170e4f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  executeInUpdate: 1
+  anchorType: 4
+  anchorOffset: {x: -1.23, y: 0.06, z: 0}

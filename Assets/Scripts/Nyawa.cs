@@ -41,6 +41,14 @@ public class Nyawa : MonoBehaviour
             {
                 SceneManager.LoadScene("GameOver3");
             }
+            else if (SceneManager.GetSceneByName("level-2-3").isLoaded)
+            {
+                SceneManager.LoadScene("GameOver4");
+            }
+            else if (SceneManager.GetSceneByName("level-3-1").isLoaded)
+            {
+                SceneManager.LoadScene("GameOver5");
+            }
             else if (SceneManager.GetSceneByName("level-3-2").isLoaded)
             {
                 SceneManager.LoadScene("GameOver6");
@@ -48,6 +56,10 @@ public class Nyawa : MonoBehaviour
             else if (SceneManager.GetSceneByName("level-3-3").isLoaded)
             {
                 SceneManager.LoadScene("GameOver7");
+            }
+            else if (SceneManager.GetSceneByName("level-3-4").isLoaded)
+            {
+                SceneManager.LoadScene("GameOver8");
             }
         }
     }
