@@ -109,6 +109,7 @@ public class KarakterBewarna : MonoBehaviour
         MovePlayer();
         animator.SetBool("IsRun", moveLeft || moveRight);
         animator.SetBool("IsJump", hasJumped);
+        // animator.SetBool("IsShoot", );
     }
 
     private void MovePlayer()
