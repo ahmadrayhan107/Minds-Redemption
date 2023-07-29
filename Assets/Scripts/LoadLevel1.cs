@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class LoadLevel1 : MonoBehaviour
 {
+    public void LoadAnimation()
+    {
+        SceneManager.LoadScene("AnimasiOpening");
+    }
+
     public void LoadObstacle1()
     {
         SceneManager.LoadScene("HintTantangan1");

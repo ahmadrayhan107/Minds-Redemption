@@ -562,7 +562,7 @@ GameObject:
   - component: {fileID: 1217733298}
   - component: {fileID: 1217733297}
   - component: {fileID: 1217733296}
-  - component: {fileID: 1217733295}
+  - component: {fileID: 1217733299}
   m_Layer: 5
   m_Name: Try Again
   m_TagString: Untagged
@@ -590,18 +590,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 150}
   m_SizeDelta: {x: -306, y: 132}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1217733295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1217733293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19879ce99cf954745ba37977d60258d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1217733296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -646,9 +634,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1217733295}
+      - m_Target: {fileID: 1217733299}
         m_TargetAssemblyTypeName: LoadLevel1, Assembly-CSharp
-        m_MethodName: LoadObstacle2
+        m_MethodName: LoadObstacle1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -696,6 +684,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217733293}
   m_CullTransparentMesh: 1
+--- !u!114 &1217733299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217733293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19879ce99cf954745ba37977d60258d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1619847095
 GameObject:
   m_ObjectHideFlags: 0

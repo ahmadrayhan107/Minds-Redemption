@@ -14,4 +14,9 @@ public class LoadLevel2 : MonoBehaviour
     {
         SceneManager.LoadScene("HintTantangan4");
     }
+
+    public void LoadObstacle3()
+    {
+        SceneManager.LoadScene("HintTantangan5");
+    }
 }
