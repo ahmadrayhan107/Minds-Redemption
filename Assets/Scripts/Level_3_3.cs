@@ -27,7 +27,7 @@ public class Level_3_3 : MonoBehaviour
     {
         if (player1Touched && player2Touched)
         {
-            SceneManager.LoadScene("Level-3-3");
+            SceneManager.LoadScene("HintTantangan9");
         }
     }
 }

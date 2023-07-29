@@ -44,11 +44,16 @@ public class BentengController : MonoBehaviour
         {
             if (i < currentNyawa)
             {
-                nyawaImages[i].sprite = nyawaSprites[0]; // Gambar nyawa penuh
+                // Cetak nama sprite yang sedang digunakan
+                Debug.Log("Sprite yang sedang digunakan untuk nyawa benteng " + (i + 1) + ": " + nyawaSprites[i].name);
+
+                // Ganti gambar nyawa benteng sesuai dengan nyawa saat ini
+                nyawaImages[i].sprite = nyawaSprites[i];
             }
             else
             {
-                nyawaImages[i].sprite = nyawaSprites[1]; // Gambar nyawa kosong
+                // Gambar nyawa kosong
+                nyawaImages[i].sprite = nyawaSprites[nyawaSprites.Length - 1];
             }
         }
     }
@@ -63,6 +68,7 @@ public class BentengController : MonoBehaviour
 
     private void DestroyBenteng()
     {
+        // Hapus game object benteng
         Destroy(gameObject);
     }
 }

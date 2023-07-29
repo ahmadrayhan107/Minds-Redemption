@@ -31,15 +31,23 @@ public class Nyawa : MonoBehaviour
             }
             else if (SceneManager.GetSceneByName("Level-1-2").isLoaded)
             {
-                SceneManager.LoadScene("GameOver1");
+                SceneManager.LoadScene("GameOver");
             }
             else if (SceneManager.GetSceneByName("level-2-1").isLoaded)
             {
-                SceneManager.LoadScene("GameOver2");
+                SceneManager.LoadScene("GameOver1");
             }
             else if (SceneManager.GetSceneByName("level-2-2").isLoaded)
             {
-                SceneManager.LoadScene("GameOver3");
+                SceneManager.LoadScene("GameOver1");
+            }
+            else if (SceneManager.GetSceneByName("level-2-3").isLoaded)
+            {
+                SceneManager.LoadScene("GameOver1");
+            }
+            else if (SceneManager.GetSceneByName("level-3-1").isLoaded)
+            {
+                SceneManager.LoadScene("GameOver2");
             }
             else if (SceneManager.GetSceneByName("level-2-3").isLoaded)
             {
@@ -51,11 +59,15 @@ public class Nyawa : MonoBehaviour
             }
             else if (SceneManager.GetSceneByName("level-3-2").isLoaded)
             {
-                SceneManager.LoadScene("GameOver6");
+                SceneManager.LoadScene("GameOver2");
             }
             else if (SceneManager.GetSceneByName("level-3-3").isLoaded)
             {
-                SceneManager.LoadScene("GameOver7");
+                SceneManager.LoadScene("GameOver2");
+            }
+            else if (SceneManager.GetSceneByName("level-3-4").isLoaded)
+            {
+                SceneManager.LoadScene("GameOver2");
             }
             else if (SceneManager.GetSceneByName("level-3-4").isLoaded)
             {

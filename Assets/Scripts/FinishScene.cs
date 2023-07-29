@@ -6,7 +6,10 @@ using UnityEngine.SceneManagement;
 public class FinishScene : MonoBehaviour
 {
     private bool player1Touched = false;
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     private bool player2Touched = false;
 
     public void OnTriggerEnter2D(Collider2D other)
@@ -27,6 +30,16 @@ public class FinishScene : MonoBehaviour
     {
         if (player1Touched && player2Touched)
         {
+<<<<<<< Updated upstream
+=======
+             int currentLevel = PlayerPrefs.GetInt("level", 1);
+
+             if (currentLevel != 3)
+            {
+                PlayerPrefs.SetInt("level", 2);
+            }
+            // Load scene "Finished"
+>>>>>>> Stashed changes
             SceneManager.LoadScene("Finished");
         }
     }
