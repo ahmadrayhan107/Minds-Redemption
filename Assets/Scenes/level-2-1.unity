@@ -839,7 +839,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   executeInUpdate: 1
   anchorType: 4
-  anchorOffset: {x: -0.71, y: 2.36, z: 0}
+  anchorOffset: {x: -0.22, y: 2.36, z: 0}
 --- !u!212 &129289816
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -900,7 +900,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 129289814}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9100001, y: 2.36, z: 0}
+  m_LocalPosition: {x: -1.4200001, y: 2.36, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1385,7 +1385,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -69.46, y: 0.6411}
+  m_AnchoredPosition: {x: -69.45999, y: 0.6411}
   m_SizeDelta: {x: 1.282196, y: 1.2822}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &500455639
@@ -2266,7 +2266,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930686192}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.39, y: -1.59, z: 0}
+  m_LocalPosition: {x: -3.78, y: -1.59, z: 0}
   m_LocalScale: {x: -0.16488984, y: -0.15525015, z: -0.09477065}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2287,7 +2287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   executeInUpdate: 1
   anchorType: 3
-  anchorOffset: {x: 0.06, y: -1.59, z: 0}
+  anchorOffset: {x: -0.33, y: -1.59, z: 0}
 --- !u!1 &1011591425
 GameObject:
   m_ObjectHideFlags: 0
@@ -2404,7 +2404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   executeInUpdate: 1
   anchorType: 4
-  anchorOffset: {x: -0.71, y: -2.36, z: 0}
+  anchorOffset: {x: -0.22, y: -2.36, z: 0}
 --- !u!212 &1061769603
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2465,7 +2465,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1061769601}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -1.9100001, y: -2.36, z: 0}
+  m_LocalPosition: {x: -1.4200001, y: -2.36, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -4099,7 +4099,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711764575}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: -3.39, y: 1.59, z: 0}
+  m_LocalPosition: {x: -3.6000001, y: 1.59, z: 0}
   m_LocalScale: {x: -0.16488984, y: -0.15525015, z: -0.09477065}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4120,7 +4120,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   executeInUpdate: 1
   anchorType: 3
-  anchorOffset: {x: 0.06, y: 1.59, z: 0}
+  anchorOffset: {x: -0.15, y: 1.59, z: 0}
 --- !u!1 &1781314334
 GameObject:
   m_ObjectHideFlags: 0

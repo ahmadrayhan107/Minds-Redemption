@@ -13,7 +13,7 @@ public class StoneAttack : MonoBehaviour
     {
         if (collision.CompareTag("lubang"))
         {
-            Destroy(this.gameObject);
+            gameObject.SetActive(false);
         }
     }
 }

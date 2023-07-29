@@ -12,17 +12,23 @@ public class Lamp : MonoBehaviour
 
     private bool isInteracted = false;
 
+    private int count = 0;
+
     public void startInteraction()
     {
         if (!isInteracted && player.transform.position.x >= transform.position.x)
         {
             isInteracted = true;
-            Vector3 scale = transform.localScale;
-            scale = scale / 0.19f * 0.25f;
-            transform.localScale = scale;
+            if (count == 0)
+            {
+                Vector3 scale = transform.localScale;
+                scale = scale / 0.19f * 0.25f;
+                transform.localScale = scale;
+                count++;
+            }
             SpriteRenderer sr = GetComponent<SpriteRenderer>();
             sr.sprite = null;
-            Destroy(tarantula.gameObject);
+            tarantula.SetActive(false);
             Spawn(sr, lampOn);
         }
     }
