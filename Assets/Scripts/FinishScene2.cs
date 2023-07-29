@@ -5,11 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class FinishScene2 : MonoBehaviour
 {
-<<<<<<< Updated upstream
-    private bool player1Touched = false;
-=======
    private bool player1Touched = false;
->>>>>>> Stashed changes
 
     private bool player2Touched = false;
 
@@ -31,12 +27,9 @@ public class FinishScene2 : MonoBehaviour
     {
         if (player1Touched && player2Touched)
         {
-<<<<<<< Updated upstream
-=======
             // Ubah nilai level menjadi 2 di local storage (PlayerPrefs)
             PlayerPrefs.SetInt("level", 3);
 
->>>>>>> Stashed changes
             SceneManager.LoadScene("Finished2");
         }
     }

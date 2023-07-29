@@ -27,11 +27,7 @@ public class Level_3_2 : MonoBehaviour
     {
         if (player1Touched && player2Touched)
         {
-<<<<<<< Updated upstream
             SceneManager.LoadScene("HintTantangan7");
-=======
-            SceneManager.LoadScene("HintTantangan8");
->>>>>>> Stashed changes
         }
     }
 }
